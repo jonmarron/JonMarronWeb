@@ -180,7 +180,9 @@ header {
     opacity: 0;
   }
   
-  
+}
+.cursor {
+  font-weight:200;
 }
 /* HEADER end */
 
