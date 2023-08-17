@@ -125,22 +125,22 @@ p, ul{
   color: var(--paragraph);
   text-align: center;
   font-family: Inter;
-  font-size: 1.25rem;
   font-weight: 200;
-  line-height: 1.87rem; /* 150% */
   letter-spacing: 0.25px;
 }
 
-p.bullets{
-  text-align: center;
+p{
   font-size: 1.1rem;
   line-height: 1.6rem; /* 150% */
-  letter-spacing: 0.25px;
+  text-align: center;
 }
 
 ul {
   list-style-type: none;
   padding: 0;
+  font-size: 1.25rem;
+  line-height: 1.87rem; /* 150% */
+
 }
 
 li {
