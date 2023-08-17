@@ -296,7 +296,7 @@ header {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(120px * -13));
+    transform: translateX(calc(120px * -14));
   }
 }
 .gradient {
