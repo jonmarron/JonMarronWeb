@@ -9,7 +9,6 @@ const Header = () => {
   
   return (
     <header>
-      
         <h1>Hi! My name is <span className="accent-text">Jon</span><br/>and I am a<br/><span className="accent-text">
           <TypewriterComponent
               options={{

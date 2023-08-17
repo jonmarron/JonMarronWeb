@@ -3,6 +3,7 @@ import './App.css'
 import Header from './Components/Header'
 import FullstackFusion from './Components/FullstackFusion'
 import ToolAccess from './Components/ToolAccess'
+import TechStack from './Components/TechStack'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,6 +12,7 @@ function App() {
     <>
       <Header/>
       <FullstackFusion/>
+      <TechStack/>
       <ToolAccess/>
     </>
   )
