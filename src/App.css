@@ -280,7 +280,7 @@ header {
 
 #tech-stack .logo-carousel{
   position: relative;
-  margin-top: 50px;
+  margin: 15px 0 30px 0;
   overflow-x: hidden;
   width: calc(120px * 6);
 }
@@ -325,3 +325,74 @@ header {
 }
 
 /* TECH STACK end */
+
+/* RESUME start */
+
+ul.jobs {
+  width: 100%;
+}
+
+ul.jobs li {
+  display: grid;
+  grid-template-columns: [column1-start]1fr [column2-start]3fr [column3-start]3fr;
+  grid-template-rows: [only]1fr;
+  column-gap: 20px;
+  padding: 10px;
+  background-color: #ffffff05;
+  border-radius: 20px;
+  height:60px; 
+  transition: .4s ease-in-out transform;
+}
+ul.jobs li.job{
+  transform-origin: 100% 50%;
+
+}
+ul.jobs li.education{
+  transform-origin: 0% 50%;
+}
+ul.jobs li:hover {
+  transform: scale(1.02);
+}
+
+ul.jobs p {
+  margin: 0;
+  font-size: .9rem;
+  text-align: left;
+
+}
+
+.company-logo{
+  grid-column-start: column1-start;
+  align-self: center;
+  justify-self: start;
+  height: 60px;
+}
+.company-logo img {
+  width: 60px;
+  height: 60px;
+}
+
+li .job-description{
+  align-self: end;
+}
+
+
+li .job-description p.position{
+  font-size: .9rem;
+  font-style: italic;
+}
+
+li .job-description p.company-name {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+li .location-time {
+  align-self: end;
+}
+li .location-time p{
+  text-align: right;
+  margin-right: 10px;
+}
+
+/* RESUME end */

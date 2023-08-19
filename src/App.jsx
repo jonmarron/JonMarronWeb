@@ -4,6 +4,7 @@ import Header from './Components/Header'
 import FullstackFusion from './Components/FullstackFusion'
 import ToolAccess from './Components/ToolAccess'
 import TechStack from './Components/TechStack'
+import Resume from './Components/Resume'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,6 +14,7 @@ function App() {
       <Header/>
       <FullstackFusion/>
       <TechStack/>
+      <Resume/>
       <ToolAccess/>
     </>
   )
