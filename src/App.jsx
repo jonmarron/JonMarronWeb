@@ -5,6 +5,7 @@ import FullstackFusion from './Components/FullstackFusion'
 import ToolAccess from './Components/ToolAccess'
 import TechStack from './Components/TechStack'
 import Resume from './Components/Resume'
+import Contact from './Components/Contact'
 
   const getCurrentDimension = () => {
     return (
@@ -31,8 +32,8 @@ function App() {
     )
   }, [screenSize])
   
-  if (screenSize.width < 800){
-    return <Header message={'Mobile site still in Progress, please switch to a computer.'}/>
+  if (screenSize.width < 1300){
+    return <Header message={'Responsivenes is still in Progress, please switch to a bigger screen.'}/>
   }
 
   return (
@@ -41,6 +42,7 @@ function App() {
       <FullstackFusion/>
       <TechStack/>
       <Resume/>
+      <Contact/>
       <ToolAccess/>
     </>
   )

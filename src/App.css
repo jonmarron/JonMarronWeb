@@ -396,3 +396,84 @@ li .location-time p{
 }
 
 /* RESUME end */
+
+/* CONTACT start */
+.contact-options-container {
+  width: 100%;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-option {
+  position: relative;
+  width: 14%;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: #eeeeee70;
+  padding:  30px;
+  border-radius: 28px;
+}
+
+.contact-option h3 {
+  color:var(--bg-color);
+  margin: 0;
+  font-size:2.1rem;
+  text-align: left;
+  line-height: 2.6rem;
+}
+.contact-option.fav{
+  background-color: #eeeeee;
+  scale: 1.1;
+  padding-top: 50px;
+}
+.tag {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: var(--light-text);
+  background-color: var(--accent-color);
+  padding: 5px 15px;
+  border-radius: 30px;
+  font-size: .7rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+}
+
+.contact-option ul {
+  list-style: none;
+  text-align: left;
+}
+
+.contact-option ul li{
+  color:var(--bg-color);
+  font-size: 1rem;
+  margin: 0;
+  line-height: 2.5rem;
+}
+
+.contact-option button {
+  font-size: .7rem;
+}
+.contact-option button:hover {
+  background-color: transparent;
+  color: var(--accent-color);
+}
+
+.contact-option ul li::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f058";
+  color: var(--accent-color);
+  margin-right: 20px;
+}
+.contact-option ul li.disabled::before{
+  content: "\f057";
+  color: var(--bg-color);
+}
+
+/* CONTACT end */
