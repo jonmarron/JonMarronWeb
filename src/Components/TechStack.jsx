@@ -10,9 +10,9 @@ const TechStack = () => {
         <div className="gradient start"></div>
         <div className="gradient end"></div>
         <div className='carousel'>
-          {array.map(number => {
+          {array.map((number, index) => {
             return (
-              <img src={'TechStack/techstack_icon_' +number + '.png'}></img>
+              <img src={'TechStack/techstack_icon_' +number + '.png'} key={index}></img>
               )
             })}
         </div>

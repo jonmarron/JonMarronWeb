@@ -9,6 +9,7 @@
   font-family: 'Inter', sans-serif;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 body {
@@ -22,7 +23,6 @@ body {
   left: 0;
   top: 0;
   width: 100%;
-  box-sizing: border-box;
   background-color: var(--bg-color);
 }
 
@@ -73,16 +73,18 @@ button {
   transition: .3s ease-in-out;
 }
 
-button::after{
+button:not(.disabled)::after{
   font-family: "Font Awesome 5 Free";
   font-weight: 700;
   content: "\f061";
   margin-left: 20px;
 }
 
-button:hover {
+button:not(.disabled):hover {
   background-color:var(--accent-color-transparent);
 }
+
+
 
 .accent-text {
   color: var(--accent-color);
@@ -147,7 +149,34 @@ li {
   margin-bottom: 1rem;
 }
 
+input, select, textarea, option {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: .5rem;
+  margin:10px 0 15px 0;
+  background-color: #ffffff10;
+  color: var(--light-text);
+}
+
+.error {
+  border: 2px solid rgb(228, 44, 44);;
+}
+
+textarea {
+  resize: vertical;
+}
+.error-message {
+  color: rgb(228, 44, 44);
+  font-size: .7rem;
+}
+
+label {
+  color: var(--light-text);
+}
+
 section {
+  position: relative;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -340,7 +369,6 @@ ul.jobs li {
   padding: 10px;
   background-color: #ffffff05;
   border-radius: 20px;
-  height:60px; 
   transition: .4s ease-in-out transform;
 }
 ul.jobs li.job{
@@ -398,6 +426,8 @@ li .location-time p{
 /* RESUME end */
 
 /* CONTACT start */
+
+#contact h2 {margin-bottom: 0;}
 .contact-options-container {
   width: 100%;
   margin: 50px;
@@ -408,13 +438,13 @@ li .location-time p{
 
 .contact-option {
   position: relative;
-  width: 14%;
+  width: 18%;
   margin: 0 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-  background-color: #eeeeee70;
+  background-color: #eeeeee50;
   padding:  30px;
   border-radius: 28px;
 }
@@ -428,7 +458,7 @@ li .location-time p{
 }
 .contact-option.fav{
   background-color: #eeeeee;
-  scale: 1.1;
+  scale: 1.04;
   padding-top: 50px;
 }
 .tag {
@@ -437,7 +467,7 @@ li .location-time p{
   right: 20px;
   color: var(--light-text);
   background-color: var(--accent-color);
-  padding: 5px 15px;
+  padding: 10px 20px;
   border-radius: 30px;
   font-size: .7rem;
   text-transform: uppercase;
@@ -475,5 +505,38 @@ li .location-time p{
   content: "\f057";
   color: var(--bg-color);
 }
+
+.contact-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: #00000090;
+  z-index: 999999;
+}
+.contact-modal .form-container {
+  width: 30%;
+  background-color: #00000080;
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.contact-modal .form-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.close-icon {
+  color: #eeeeee;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+
 
 /* CONTACT end */

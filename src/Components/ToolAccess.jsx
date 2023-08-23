@@ -16,9 +16,9 @@ const ToolAccess = () => {
             <li>Easily give feedback</li>
             <li>Edit the project's status any time</li>
           </ul>
-          <a href="http://localhost:5174" target='_blank'>
-            <button>Access now</button>
-          </a>
+          {/* <a href="http://localhost:5174" target='_blank'> */}
+            <button className='disabled'>WORK IN PROGRESS</button>
+          {/* </a> */}
         </div>
       </div>
     </section>

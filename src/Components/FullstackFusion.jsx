@@ -30,9 +30,10 @@ const FullstackFusion = () => {
         <p>No more saying “move that to the right” to developers<br/> or ”that can't be done” to designers!!</p>
       </div>
       <div className="competencies">
-        {competencies.map(competency => {
+        {competencies.map((competency, index) => {
           return (
             <Competency
+              key={index}
               imagePath={competency.imagePath}
               headline={competency.headline}
               text={competency.text}
