@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown, faHourglass2 } from '@fortawesome/free-solid-svg-icons'
 import TypewriterComponent from 'typewriter-effect'
 
-const Header = () => {
+const Header = ({message}) => {
 
   const positionsArray = ['UX/UI Designer', 'Frontend Developer', 'Backend Developer'];
   
@@ -20,9 +20,13 @@ const Header = () => {
                 pauseFor: 400
               }}
           /></span></h1>
-        <div className="scroll-animation">
-          <FontAwesomeIcon icon={faChevronDown} size='2x'/>
-        </div>
+          {message?(
+            <p>{message}</p>
+          ):(
+            <div className="scroll-animation">
+              <FontAwesomeIcon icon={faChevronDown} size='2x'/>
+            </div>
+          ) }
     </header>
   )
 }
