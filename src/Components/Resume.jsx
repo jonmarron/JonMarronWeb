@@ -17,25 +17,25 @@ const Resume = () => {
     {
       name: 'Braintribe',
       position: 'Graphic Designer',
-      duration: 'Jul 2012 - August 2012',
+      duration: 'Dec 2013 - Sept 2015',
       imgURL: 'JobExperience/job_3.png'
     },
     {
       name: 'Agency 4E7',
       position: 'Graphic Designer',
-      duration: 'Dec 2013 - Sept 2015',
+      duration: 'Oct 2015 - Apr 2017',
       imgURL: 'JobExperience/job_4.png'
     },
     {
       name: 'Springer & Jacoby',
       position: 'Art Director',
-      duration: 'Oct 2015 - Apr 2017',
+      duration: 'Apr 2017 - Jul 2021',
       imgURL: 'JobExperience/job_5.png'
     },
     {
       name: 'MMC Agentur',
       position: 'Online Art Director',
-      duration: 'Apr 2017 - Jul 2021',
+      duration: 'Jul 2021 - Jul 2023',
       imgURL: 'JobExperience/job_6.png'
     }
   ]
@@ -59,8 +59,12 @@ const Resume = () => {
       imgURL: 'Education/education3.png'
     }
   ]
+
+  jobs.reverse();
+  education.reverse();
+  
   return (
-    <section>
+    <section id='resume'>
       <div className="two-column-container">
         <div className="column">
           <h2>Professional <span className="accent-text">Experience</span></h2>

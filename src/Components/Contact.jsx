@@ -32,7 +32,7 @@ const Contact = () => {
     },
     {
       containerClass:'fav',
-      headline: 'Google meet',
+      headline: 'Google Meet',
       first: '',
       second: '',
       third: 'disabled',

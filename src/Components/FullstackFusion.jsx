@@ -22,7 +22,7 @@ const FullstackFusion = () => {
   ]
 
   return (
-    <section>
+    <section id='fullstack-fusion'>
       <div className="text-content">
         <h2>
         Empowering Vision and Code:<br/>The <span className="accent-text">Fullstack Fusion</span> of<br/>Design and Development

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700;900&display=swap');
 
 *{
   --bg-color: #151719;
@@ -27,6 +27,7 @@ body {
 }
 
 #root {
+  position: relative;
   margin: 0;
   padding: 0;
 }
@@ -47,6 +48,7 @@ body {
 }
 
 a {
+  color: var(--accent-color);
   text-decoration: none;
 }
 
@@ -190,6 +192,74 @@ section.half-height {
   height: 50vh;
 }
 
+/* NAV start */
+.burger-menu {
+  z-index: 99999;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: var(--light-text);
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9998;
+  padding: 100px 50px;
+  width: 25%;
+  height: 100vh;
+  background-color: #15171980;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 30px #eeeeee05 ;
+  transition: .4s ease-in-out transform;
+}
+.nav.hidden{
+  transform: translateX(30vw);
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  font-weight: 400;
+}
+.nav ul a {
+  text-decoration: none;
+  color: var(--light-text);
+  transform-origin: 0 50%;
+  transition: .4s ease-in-out letter-spacing;
+}
+
+.nav ul a:hover{
+  letter-spacing: .05rem;
+}
+
+.nav ul li {
+  margin-bottom: 30px;
+}
+
+/* NAV end */
+
+/* COPYRIGHT start */
+.copyright {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  font-size: .9rem;
+  color: var(--light-text);
+  width: auto;
+  letter-spacing: .15rem;
+  font-weight:300;
+}
+
+
+/* COPYRIGHT end */
+
 /* HEADER start */
 header {
   position: relative;
@@ -226,6 +296,19 @@ header {
 }
 .cursor {
   font-weight:200;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top:30px;
+}
+.social-icons img {
+  height: 30px;
+  opacity: .6;;
+  width: auto;
+  margin: 0 10px;
+
 }
 /* HEADER end */
 
@@ -278,10 +361,12 @@ header {
   margin: 0 20px;
 }
 
-.column img {
-  width: 80%;
-  height: auto;
+.column.image-column {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
+
 
 .column.text h2, .column.text ul{
   text-align: left;
