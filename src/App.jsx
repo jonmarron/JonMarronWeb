@@ -9,6 +9,7 @@ import Contact from './Components/Contact'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faHeart, faBars, faX} from '@fortawesome/free-solid-svg-icons'
 import MySocials from './Components/MySocials'
+import Quotes from './Components/Quotes'
 
   const getCurrentDimension = () => {
     return (
@@ -72,6 +73,7 @@ function App() {
       <FullstackFusion/>
       <TechStack/>
       <Resume/>
+      <Quotes/>
       <Contact/>
       {/* <MySocials/> */}
     </>

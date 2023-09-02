@@ -17,7 +17,7 @@ const ContactOption = ({ classnames, message, setMessage, setModalVisible}) => {
       <ul>
         <li className={classnames.first}>Hear my voice</li>
         <li className={classnames.second}>Look in my eyes</li>
-        <li className={classnames.third}>Coffe or Tea</li>
+        <li className={classnames.third}>Coffee or Tea</li>
         <li className={classnames.fourth}>Firm Handshake</li>
       </ul>
       <button onClick={handleOpenModal}>Book option</button>

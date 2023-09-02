@@ -622,6 +622,54 @@ li .location-time p{
   cursor: pointer;
 }
 
-
-
 /* CONTACT end */
+
+/* REFERENCES start */
+.references {
+  display:flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 80%;
+}
+
+.single-reference {
+  position: relative;
+  display: flex;
+  flex-direction:column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 20px;
+  width: 30%;
+  background-color: #ffffff05;
+  padding: 20px;
+  
+}
+
+.profile-img {
+  position: relative;
+  width: 60px;
+}
+.quotation-mark {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+}
+.client-image {
+  height:60px;
+  width: 60px;
+  border-radius: 30px;
+}
+
+.review-content p:nth-child(1) {
+  text-align: left;
+}
+
+.reviewer {
+  font-weight: 500;
+  border-top: 1px solid var(--accent-color);
+  padding-top: 20px;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+/* REFERENCES end */

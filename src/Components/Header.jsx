@@ -9,7 +9,7 @@ const Header = ({message}) => {
   
   return (
     <header>
-        <h1>Hi! My name is <span className="accent-text">Jon</span><br/>and I am a<br/><span className="accent-text">
+        <h1>Hi! My name is <span className="accent-text">Jon</span> and<br/> I am a Vienna Based<br/><span className="accent-text">
           <TypewriterComponent
               options={{
                 strings: positionsArray,
