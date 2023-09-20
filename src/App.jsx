@@ -1,15 +1,15 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import Header from './Components/Header'
-import FullstackFusion from './Components/FullstackFusion'
+import FullstackFusion from './Components/FullstackFusion/FullstackFusion'
 import ToolAccess from './Components/ToolAccess'
 import TechStack from './Components/TechStack'
 import Resume from './Components/Resume'
-import Contact from './Components/Contact'
+import Contact from './Components/Contact/Contact'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faHeart, faBars, faX} from '@fortawesome/free-solid-svg-icons'
-import MySocials from './Components/MySocials'
-import Quotes from './Components/Quotes'
+import Reviews from './Components/Reviews/Reviews'
+import Portfolio from './Components/Portfolio/Portfolio'
 
   const getCurrentDimension = () => {
     return (
@@ -63,19 +63,22 @@ function App() {
               <a href="#resume">
                 <li>Professional <span className="accent-text">Experience & Education</span></li>
               </a>
+              {/* <a href="#reviews">
+                <li>What <span className="accent-text">people</span> say</li>
+              </a> */}
               <a href="#contact">
                 <li>Contact</li>
               </a>
             </ul>
       </div>
-      <div className="copyright">Hand coded with <FontAwesomeIcon icon={faHeart} /> by <a href="https://github.com/jonmarron" target='_blank'>Jon Ladron de Guevara</a></div>
       <Header/>
       <FullstackFusion/>
       <TechStack/>
+      <Portfolio/>
       <Resume/>
-      <Quotes/>
+      <Reviews/>
       <Contact/>
-      {/* <MySocials/> */}
+      <div className="copyright">Hand coded with <FontAwesomeIcon icon={faHeart} /> by <a href="https://github.com/jonmarron" target='_blank'>Jon Ladron de Guevara</a></div>
     </>
   )
 }

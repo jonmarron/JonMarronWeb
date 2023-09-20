@@ -1,26 +1,8 @@
 import React from 'react'
 import Competency from './Competency'
+import { competencies } from '../../data/websiteData'
 
 const FullstackFusion = () => {
-
-  const competencies = [
-    {
-      imagePath: 'icon_design.svg',
-      headline: 'UX/UI Design',
-      text: 'Captivating designs that breathe life into brands, ensuring your online presence stands out.'
-    },
-    {
-      imagePath: 'icon_frontend.svg',
-      headline: 'Frontend Development',
-      text: 'Elevate user experiences with seamless, intuitive interfaces and cutting-edge technologies.'
-    },
-    {
-      imagePath: 'icon_backend.svg',
-      headline: 'Backend Development',
-      text: 'Powering web applications with robust backend architecture for security and scalability.'
-    }
-  ]
-
   return (
     <section id='fullstack-fusion'>
       <div className="text-content">

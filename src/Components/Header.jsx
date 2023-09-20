@@ -23,7 +23,7 @@ const Header = ({message}) => {
           <div className="social-icons">
             <a href="https://www.linkedin.com/in/jonladrondeguevara/ " target='_blank'><img src="Links/LinkedIn.svg" alt="" /></a>
             <a href="https://github.com/jonmarron" target='_blank'><img src="Links/GitHub.svg" alt="" /></a>
-            <a href="https://github.com/jonmarron" target='_blank'><img src="Links/Codepen.svg" alt="" /></a>
+            {/* <a href="https://github.com/jonmarron" target='_blank'><img src="Links/Codepen.svg" alt="" /></a> */}
           </div>
           {message?(
             <p>{message}</p>
