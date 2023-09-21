@@ -18,7 +18,7 @@ export const  works = [
     description:'During my time at Springer & Jacoby I worked on both the Branding and Website of Salomonowitz Rechtsanwälte. I didn\'t code the page but I assisted the developers with some code snippets.',
     categories: ['Frontend Dev', 'Design'],
     img: 'cases/case_salomonowitz.png',
-    link:'https://www.salomonowitz.com/',
+    link:'https://www.salomonowitz.at/',
     buttonContent: 'visit site'
   }
 ];
