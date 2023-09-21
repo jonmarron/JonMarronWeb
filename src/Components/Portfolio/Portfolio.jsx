@@ -5,8 +5,8 @@ const Portfolio = () => {
 
   
   return (
-    <section className='portfolio'>
-      <h2>Some <span className="accent-text">things</span> I've done</h2>
+    <section className='portfolio' id='portfolio'>
+      <h2>Some <span className="accent-text">things</span><br/>I've <span className="accent-text">worked</span> on</h2>
       <div className="projects">
         {works.map((work, index) => {
           return(
@@ -14,8 +14,6 @@ const Portfolio = () => {
           )
         })}
       </div>
-
-
     </section>
   )
 }

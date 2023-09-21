@@ -278,11 +278,10 @@ header {
 }
 
 .scroll-animation {
-  position: absolute;
+  position:absolute;
   bottom: 30px;
-  left: 50%;
+  left: 49%;
   color: var(--accent-color);
-  transform: translateX(-50%);
   animation: infinite scroll-animation 1.5s linear;
 }
 
@@ -725,7 +724,6 @@ li .location-time p{
 .portfolio-image {
   width: 90%;
   border-radius: calc(var(--std-border-radius) - 10px);
-  box-shadow: 0 0 20px var(--accent-color-transparent);
 }
 .tag.relative {
   position: relative;

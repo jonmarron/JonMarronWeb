@@ -15,7 +15,7 @@ const PortfolioElement = ({work, index}) => {
           <h3>{work.title}</h3>
           <p>{work.description}</p>
         </div>
-        <a href={work.link} target='_blank'><button className='secondary'>Visit site</button></a>
+        <a href={work.link} target='_blank'><button className='secondary'>{work.buttonContent}</button></a>
       </div>
       <div className="column">
         <img className="portfolio-image" src={work.img} alt="" />

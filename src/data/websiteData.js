@@ -1,16 +1,25 @@
 export const  works = [
   {
-    title: 'allaboutperiod webshop',
+    title: 'allaboutperiod',
     description:'A website for a company selling all about period products. The site is built with Wordpress and Divi plus some custom CSS and JS',
     categories: ['Wordpress', 'Design'],
     img: 'cases/case_aap.png',
-    link:'https://www.allaboutperiod.com/'
+    link:'https://www.allaboutperiod.com/',
+    buttonContent: 'Visit Site'
   },{
-    title: 'allaboutperiod webshop',
-    description:'A website for a company selling all about period products. The site is built with Wordpress and Divi plus some custom CSS and JS',
+    title: 'CodeNest',
+    description:'I worked on this tool as a final project during the last module at Codecool. The thought behind it was to give my private clients a way to follow the process of the active projects and for me to be able to seamlesly update them. It is still a work in Progress and Updates will come!',
+    categories: ['Fullstack Dev', 'Design'],
+    img: 'cases/case_codenest.png',
+    link:'https://codenest.jonmarron.com/',
+    buttonContent: 'Try Demo'
+  },{
+    title: 'Salomonowitz website',
+    description:'During my time at Springer & Jacoby I worked on both the Branding and Website of Salomonowitz Rechtsanwälte. I didn\'t code the page but I assisted the developers with some code snippets.',
     categories: ['Frontend Dev', 'Design'],
     img: 'cases/case_salomonowitz.png',
-    link:'https://www.salomonowitz.com/'
+    link:'https://www.salomonowitz.com/',
+    buttonContent: 'visit site'
   }
 ];
 

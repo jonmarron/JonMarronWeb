@@ -60,6 +60,9 @@ function App() {
               <a href="#tech-stack">
                 <li>Tech <span className="accent-text">Stack</span> & Design <span className="accent-text">Toolkit</span></li>
               </a>
+              <a href="#portfolio">
+                <li>My <span className="accent-text">Works</span></li>
+              </a>
               <a href="#resume">
                 <li>Professional <span className="accent-text">Experience & Education</span></li>
               </a>
