@@ -80,7 +80,7 @@ function App() {
       <Portfolio/>
       <Resume/>
       <Reviews/>
-      {/* <Contact/> */}
+      <Contact/>
       <div className="copyright">Hand coded with <FontAwesomeIcon icon={faHeart} /> by <a href="https://github.com/jonmarron" target='_blank'>Jon Ladron de Guevara</a></div>
     </>
   )

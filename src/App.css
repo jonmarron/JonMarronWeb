@@ -605,7 +605,7 @@ li .location-time p{
 }
 
 .contact-modal {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
@@ -903,6 +903,24 @@ li .location-time p{
     width: 100%;
   }
   /* REVIEWS end */
+  /* CONTACT start */
+  .contact-options-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .contact-option {
+    width: 100%;
+  }
+
+  .contact-modal .form-container {
+    width: 80%;
+    background-color: #00000080;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 30px;
+  }  
+  /* CONTACT end */
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
