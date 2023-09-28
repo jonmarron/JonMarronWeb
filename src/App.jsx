@@ -36,9 +36,9 @@ function App() {
     )
   }, [screenSize])
   
-  if (screenSize.width < 1300){
-    return <Header message={'Responsivenes is still in Progress, please switch to a bigger screen.'}/>
-  }
+  // if (screenSize.width < 1300){
+  //   return <Header message={'Responsivenes is still in Progress, please switch to a bigger screen.'}/>
+  // }
 
   return (
     <>
@@ -79,8 +79,8 @@ function App() {
       <TechStack/>
       <Portfolio/>
       <Resume/>
-      {/* <Reviews/> */}
-      <Contact/>
+      <Reviews/>
+      {/* <Contact/> */}
       <div className="copyright">Hand coded with <FontAwesomeIcon icon={faHeart} /> by <a href="https://github.com/jonmarron" target='_blank'>Jon Ladron de Guevara</a></div>
     </>
   )

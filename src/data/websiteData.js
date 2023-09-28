@@ -2,14 +2,21 @@ export const  works = [
   {
     title: 'allaboutperiod',
     description:'A website for a company selling all about period products. The site is built with Wordpress and Divi plus some custom CSS and JS',
-    categories: ['Wordpress', 'Design'],
+    categories: ['Wordpress', 'UX/UI Design'],
     img: 'cases/case_aap.png',
     link:'https://www.allaboutperiod.com/',
     buttonContent: 'Visit Site'
   },{
+    title: 'JobTreffer',
+    description:'During my last Job as a UX/UI Designer I worked on this Platform creating subpages following the preexisting design. I also created documents for the application processes they have. It was a really interesting project that gave me a lot of insights in the HR world.',
+    categories: ['UX/UI Design'],
+    img: 'cases/case_jobtreffer.png',
+    link:'https://www.jobtreffer.at/',
+    buttonContent: 'Visit Site'
+  },{
     title: 'CodeNest',
     description:'I worked on this tool as a final project during the last module at Codecool. The thought behind it was to give my private clients a way to follow the process of the active projects and for me to be able to seamlesly update them. It is still a work in Progress and Updates will come!',
-    categories: ['Fullstack Dev', 'Design'],
+    categories: ['Fullstack Dev', 'UX/UI Design'],
     img: 'cases/case_codenest.png',
     link:'https://codenest.jonmarron.com/',
     buttonContent: 'Try Demo'
@@ -132,4 +139,28 @@ export const education = [
     duration: 'Nov 2022 - Okt 2023',
     imgURL: 'Education/education3.png'
   }
+]
+
+export const reviews = [
+  {
+    img: 'references/codecool_logo.png',
+    content: 'Jon possesses excellent design and presentation skills. His projects have a distinct visual appearance and a user friendly UI. The UI of his final project is structured clearly and well thought out. Moreover, when we were discussing how to implement a particular feature Jon took great care to consider the feature from the end users perspective. In addition, his presentations are clearly structured and well designed. He is able to convey complex topics and to break them down into simple terms.',
+    author: 'Mark',
+    company: 'Codecool Mentor',
+    link:'https://codecool.com/at/'
+  },
+  {
+    img: 'references/aap.png',
+    content: 'Jon possesses excellent design and presentation skills. His projects have a distinct visual appearance and a user friendly UI. The UI of his final project is structured clearly and well thought out. Moreover, when we were discussing how to implement a particular feature Jon took great care to consider the feature from the end users perspective. In addition, his presentations are clearly structured and well designed. He is able to convey complex topics and to break them down into simple terms.',
+    author: 'Melanie Zemsauer',
+    company: 'allaboutperiod.',
+    link:'https://www.allaboutperiod.com/'
+  },
+  {
+    img: 'references/guillermo_codecool.jpeg',
+    content: 'Jon is a motivated and driven individual with a passion for programming and design. He has a very open mind for feedback that helps him think out of the box when necessary. His profound skills in both design and software development make him a unique combination that I would recommend to any development team.',
+    author: 'Guillermo',
+    company: 'Codecool Mentor',
+    link: 'https://www.linkedin.com/in/guillermo-herrero/'
+  }  
 ]

@@ -8,11 +8,14 @@
   --paragraph: #d0d3d6;
   --std-border-radius: 20px;
   font-family: 'Inter', sans-serif;
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
 
+.mobile-bp {
+  display: none;
+}
 body {
   margin: 0;
   padding: 0;
@@ -736,3 +739,173 @@ li .location-time p{
 
 
 /* PORTFOLIO end */
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 850px) {
+  body {
+    width: 100vw;
+  }
+  .nav {
+    width: 100vw;
+  }
+
+  section {
+    min-height: 75vh;
+    margin-bottom: 100px;
+  }
+  .nav.hidden{
+    transform: translateX(100vw);
+  }
+  .copyright {
+    display: none;
+  }
+  .mobile-bp {
+    display: inline;
+  }
+  .desktop-bp {
+    display: none;
+  }
+  /* CSS rules */
+  #root {
+    padding:0 40px ;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  header {
+    width: 100%;
+  }
+  h1 {
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+  }
+  h2 {
+    font-size: 1.7rem;
+    line-height: 1.9rem;
+  }
+
+  .competencies {
+    flex-direction: column;
+    align-items: center;
+  }
+  .competency {
+    width: 100%;
+  }
+
+  /* TECH STACK start */
+  #tech-stack p {
+    width: 100%;
+  }
+
+  #tech-stack .logo-carousel{
+    position: relative;
+    margin: 15px 0 30px 0;
+    overflow-x: hidden;
+    width:90%;
+  }
+  
+  .logo-carousel .carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    animation: mobile-infinite-carousel infinite 15s linear;
+  }
+  
+  @keyframes mobile-infinite-carousel {
+    0%{
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(90px * -14));
+    }
+  }
+  .gradient {
+    z-index:9999;
+    position: absolute;
+    height: 100%;
+    width: 150px;
+  }
+  
+  .gradient.start {
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg,var(--bg-color) 0%, #15171900 100%);
+  }
+  
+  .gradient.end {
+    right: 0;
+    top: 0;
+    background: linear-gradient(270deg,var(--bg-color) 0%, #15171900 100%);
+  }
+  
+  #tech-stack img {
+    width: 70px;
+    height: 70px;
+    margin: 0 10px;
+  }
+  /* TECH STACK end */
+  /* PORTFOLIO start */
+
+  .portfolio {
+    gap: 40px;
+  }
+  .two-column-container {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: column-reverse wrap;
+  }
+  .two-column-container.reverse {
+    flex-flow:column-reverse wrap ;
+  }
+
+  .column {
+    width: 100%;
+    margin: 0 ;
+  }
+  .projects {
+    gap: 100px;
+  }
+  .portfolio-image {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: calc(var(--std-border-radius) - 10px);
+  }
+  /* PORTFOLIO end */
+
+  /* RESUME start */
+
+  #resume .two-column-container {
+    flex-flow:  wrap;
+  }
+
+  ul.jobs li  {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .location-time {
+    display: none;
+  }
+  
+  /* RESUME end */
+
+  /* REVIEWS start */
+  .references {
+    flex-direction: column;
+    width: 100%;
+  }
+  .single-reference {
+    margin: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  /* REVIEWS end */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {
+  
+} */
